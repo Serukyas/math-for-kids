@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: 'MontSerrat';
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.section{
+    overflow: hidden;
+    position: fixed;
+    top: -20px;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    background-image: linear-gradient(#0040f4, #fdd6b3);
+    background-image: linear-gradient(160deg, #edaebf, #b693e4, #93b1fb);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 25px 50px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 20px;
+    color: #1d89ff;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+  
+button span {
+    font-family: 'Montserrat';
+    color: #164ca7;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+  
+button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+}
+  
+button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+  
+@keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    } 
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+  
+.btn-shine {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+}
+  
+.btn-shine span {
+    z-index: 20;
+}
+  
+.btn-shine:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+  
+.btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}

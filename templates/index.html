@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/specs.css">
+</head>
+<body>
+    <section class="section">
+        <nav class="nav hidden">
+            <div class="icon ham-menu">
+                <img class="icon-img" src="../assets/hamburger menu.png" alt="">
+
+            </div>
+            <p class="title">Course#1</p>
+            <div class="icon">
+                <img src="../assets/arrow down.png" alt="" class="icon-img">
+            </div>
+        </nav>
+
+        <div class="nextBtn backBtn hidden float">←</div>
+
+        <section id="type" class="levels">
+            <div class="text">
+                Choose type of questions
+            </div>
+            <div class="digits-round easy">
+                <div class="digit-num">Multiple-option</div>
+            </div>
+            <div id="operation" class="digits-round medium">
+                <div class="digit-num">fill the blank space</div>
+            </div>
+        </section>
+
+        <section id="operation" class="levels hidden">
+            <div class="digits-round easy">
+                <div class="digit-num">+</div>
+                <div class="label">addition</div>
+            </div>
+            <div id="operation" class="digits-round medium">
+                <div class="digit-num">-</div>
+                <div class="label">subtraction</div>
+                <div class="label"></div>
+            </div>
+            <div class="digits-round hard">
+                <div class="digit-num">/</div>
+                <div class="label">division</div>
+                <div class="label"></div>
+            </div>
+            <div class="digits-round easy">
+                <div class="digit-num">x</div>
+                <div class="label">multiplication</div>
+                <div class="label"></div>
+            </div>
+            <div class="digits-round medium">
+                <div class="digit-num">%</div>
+                <div class="label">Modulo</div>
+                <div class="label"></div>
+            </div>
+            <div class="digits-round hard">
+                <div class="digit-num">!</div>
+                <div class="label">factorial</div>
+                <div class="label"></div>
+            </div>
+        </section>
+
+        <section id="levels" class="levels hidden">
+    
+            <div class="digits-round easy">
+                <div class="digit-num">1</div>
+                <div class="label">1 - digit quiz</div>
+            </div>
+            <div class="digits-round medium">
+                <div class="digit-num">2</div>
+                <div class="label">2 - digit quiz</div>
+                <div class="label"></div>
+            </div>
+            <div class="digits-round hard">
+                <div class="digit-num">3</div>
+                <div class="label">3 - digit quiz</div>
+                <div class="label"></div>
+            </div>
+        </section>
+        <section id="numbers" class="levels number hidden">
+            <div id="alert" class="hidden">Invalid number of questions</div>
+            <input min="1" max="100" class="" type="number" placeholder="1 to 100">
+            <div id="endless" class="nextBtn medium">Survival</div>
+            <div id="nextBtn" class="nextBtn">Normal</div>
+        </section>
+        <section id="quiz" class="levels hidden">
+            <div class="abandon">
+                <div class="x">×</div>
+                <div class="abandon-text">abandon</div>
+
+            </div>
+            <div class="stats">
+                <div class="attempts" id="attempts">
+                    3
+                </div>
+                <div class="question-num"></div>
+                <div class="progress-bar">
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="revealer"></div>
+                </div>
+                <div class="clock"> 5:00 </div>
+            </div>
+
+            <div id="correctAns" class="wrong invisible-text">Wrong Answer</div>
+
+            <div class="question inputBox">
+                <div class="num">54</div>
+                <div class="symbol">+</div>
+                <div class="num">67</div>
+                <div class="equalTo">=</div>
+                <input type="number" id="answerBox">
+            </div>
+            <div class="choices not-inactive hidden">
+                <div class="choice"></div>
+                <div class="choice"></div>
+                <div class="choice"></div>
+                <div class="choice"></div>
+            </div>
+            <div class="buttons">
+                <div id="answer" class="nextBtn">check</div>
+                <div id="skip" class="nextBtn">Skip</div>
+                <div id="next" class="nextBtn inactive">next</div>
+            </div>
+        </section>
+        
+        <section class="results hidden">
+            <div class="score">You have answerd 5 out of 10 questions correctly</div>
+            <div class="retryBtn">Retake</div>
+            <a href="./landing page.html"><div class="retryBtn quitBtn">Quit</div></a>
+        </section>
+        <!-- <section class="sidebar">
+            <a class="a" id="close" href=""> - close - </a>
+            <a class="a selected" href=""> - addition - </a>
+            <a class="a" href=""> - subtraction - </a>
+            <a class="a" href=""> - multiplication - </a>
+            <a class="a" href=""> - division - </a>
+        </section> -->
+    </section>
+    <!-- <script src="../js/Choice.js"></script>
+    <script src="../js/Input.js"></script> -->
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>
